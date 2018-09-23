@@ -18,8 +18,14 @@ include device/samsung/universal8890-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/gracerlte
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := gracelte,graceltektt,graceltelgt,gracelteskt,graceltexx,gracerlte,gracerltektt,gracerltelgt,gracerlteskt,gracerltexx
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_gracerlte
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2020-05-01
