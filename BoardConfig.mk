@@ -25,11 +25,14 @@ TARGET_OTA_ASSERT_DEVICE := gracelte,graceltektt,graceltelgt,gracelteskt,gracelt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_gracerlte
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gracerlte
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/universal8890
 TARGET_KERNEL_CONFIG := exynos8890-gracelte_defconfig
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2020-05-01
