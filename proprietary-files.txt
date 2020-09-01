@@ -1,5 +1,5 @@
-# Files are from N935FXXS7CTE1 unless pinned
-# Vendor security patch level 2020-05-01
+# Files are from N935KKKU4CTH1 unless pinned
+# Vendor security patch level 2020-08-01
 
 # DRM
 lib/liboemcrypto.so
